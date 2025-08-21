@@ -1,2 +1,375 @@
-<p>hello vikas </p>
-<h1>Welcome Vikas</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Explore World - Travel & Tourism</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Explore World</a>
+            <!-- Bootstrap Toggler (for large screens still works) -->
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar (Custom) -->
+    <div id="sidebar" class="sidebar bg-dark text-white p-3">
+        <button class="close-btn" onclick="closeSidebar()">×</button>
+        <h4 class="mt-4">Explore World</h4>
+        <ul class="list-unstyled mt-4">
+            <li><a href="#about" class="text-white text-decoration-none d-block py-2" onclick="closeSidebar()">About</a>
+            </li>
+            <li><a href="#gallery" class="text-white text-decoration-none d-block py-2"
+                    onclick="closeSidebar()">Gallery</a>
+            </li>
+            <li><a href="#destinations" class="text-white text-decoration-none d-block py-2"
+                    onclick="closeSidebar()">Destinations</a></li>
+            <li><a href="#contact" class="text-white text-decoration-none d-block py-2"
+                    onclick="closeSidebar()">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Hamburger Button (Custom Sidebar Trigger) -->
+    <button class="hamburger-btn" onclick="openSidebar()">☰</button>
+
+
+    <!-- Carousel -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://source.unsplash.com/1600x600/?paris" class="d-block w-100" alt="Paris">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Paris</h3>
+                    <p>The City of Light awaits you!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1600x600/?bali" class="d-block w-100" alt="Bali">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Bali</h3>
+                    <p>Relax in tropical paradise.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1600x600/?switzerland" class="d-block w-100" alt="Switzerland">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Switzerland</h3>
+                    <p>Explore the majestic Alps.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding text-center py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4">About Us</h2>
+            <p class="lead mb-5">
+                <strong>Explore World</strong> is your gateway to unforgettable travel experiences.
+                From breathtaking landscapes to vibrant cities, we bring you closer to the heart of every destination.
+                Whether you seek adventure, relaxation, or cultural discovery — your journey starts here!
+            </p>
+
+            <div class="row text-center g-4">
+                <!-- Mission -->
+                <div class="col-md-4">
+                    <div class="p-4 shadow-sm bg-white rounded h-100">
+                        <div class="mb-3">
+                            <i class="bi bi-globe-americas fs-1 text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold">Our Mission</h5>
+                        <p class="small">
+                            To inspire and guide travelers in discovering unique destinations while
+                            ensuring safe, affordable, and memorable journeys worldwide.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Vision -->
+                <div class="col-md-4">
+                    <div class="p-4 shadow-sm bg-white rounded h-100">
+                        <div class="mb-3">
+                            <i class="bi bi-binoculars fs-1 text-success"></i>
+                        </div>
+                        <h5 class="fw-bold">Our Vision</h5>
+                        <p class="small">
+                            To be the most trusted travel partner, making every journey effortless
+                            and enriching with handpicked packages and expert guidance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Why Choose Us -->
+                <div class="col-md-4">
+                    <div class="p-4 shadow-sm bg-white rounded h-100">
+                        <div class="mb-3">
+                            <i class="bi bi-star-fill fs-1 text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold">Why Choose Us?</h5>
+                        <p class="small">
+                            ✅ Handcrafted Packages <br>
+                            ✅ 24/7 Customer Support <br>
+                            ✅ Affordable Prices <br>
+                            ✅ Experienced Travel Experts
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel & Tourism Gallery Section -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Travel & Tourism Gallery</h2>
+            <div class="row g-4 gallery">
+                <!-- Image 1 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/05/a0005638/img/en/a0005638_parts_680997a87a2e3.jpg?20250424101132&q=80&rw=686&rh=490"
+                            alt="Beach" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                    </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://t3.ftcdn.net/jpg/02/59/06/48/360_F_259064839_mkn8e2Tj6tQTuIAq1wH6t6zHxDMsnM2Q.jpg"
+                            alt="Mountains" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://theromanguy.com/wp-content/uploads/Fontana-del-Moro-Piazza-Navona-Rome-how-to-see-rome-in-a-day-feature-1140x420.jpg"
+                            alt="City" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                    </div>
+                </div>
+                <!-- Image 4 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://media.istockphoto.com/id/485614909/photo/guide-explaining-to-tourists-the-coliseum-of-rome.jpg?s=612x612&w=0&k=20&c=cPJKPvRAi4M5g2NVHts5P7mZ1iwl_92ru6bXdTub6jQ="
+                            alt="Forest" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                    </div>
+                </div>
+                <!-- Image 5 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://c8.alamy.com/comp/B5G8K1/a-boat-full-of-tourists-in-the-maldives-B5G8K1.jpg"
+                            alt="Desert" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                    </div>
+                </div>
+                <!-- Image 6 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://s3.ap-southeast-1.amazonaws.com/media5.psm.mv/media/post/big_aFAiQDCqRre4eICyCa83ojqai.jpg"
+                            alt="Island" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal for Lightbox -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0 position-relative">
+                <!-- Close Button -->
+                <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                <!-- Image -->
+                <img src="" class="img-fluid rounded" id="modalImage" alt="Gallery View">
+            </div>
+        </div>
+    </div>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="bg-light section-padding text-center">
+        <div class="container">
+            <h2 class="mb-5">Popular Destinations</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/img/premium_photo-1661902398022-762e88ff3f82.jpeg" class="card-img-top" alt="Tokyo">
+                        <div class="card-body">
+                            <h5 class="card-title">Tokyo</h5>
+                            <p class="card-text">5-day city experience</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Book
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/img/msid-53891769,width-96,height-65.cms" class="card-img-top" alt="Rome">
+                        <div class="card-body">
+                            <h5 class="card-title">Rome</h5>
+                            <p class="card-text">Historic 7-day tour</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Book
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/img/maldivy-tropiki-more-bungalo.webp" class="card-img-top" alt="Maldives">
+                        <div class="card-body">
+                            <h5 class="card-title">Maldives</h5>
+                            <p class="card-text">Romantic getaway</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Book
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content shadow-lg border-0 rounded-4">
+                <div class="modal-header bg-dark text-white rounded-top-4">
+                    <h5 class="modal-title" id="bookingModalLabel">Book Your Trip</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 py-3">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control form-control-lg" id="name" placeholder="John Doe">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control form-control-lg" id="email"
+                                placeholder="you@example.com">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="travelers" class="form-label">Number of Travelers</label>
+                                <input type="number" class="form-control form-control-lg" id="travelers" min="1"
+                                    value="1">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="date" class="form-label">Travel Date</label>
+                                <input type="date" class="form-control form-control-lg" id="date">
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-success btn-lg px-4">Submit Booking</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4 text-center">Contact Us</h2>
+            <p class="lead text-center mb-5">We’d love to hear from you! Whether you have questions about our packages,
+                need travel assistance, or just want to say hello — feel free to reach out.</p>
+
+            <div class="row g-4">
+                <!-- Contact Information -->
+                <div class="col-md-4">
+                    <div class="p-4 shadow-sm bg-white rounded text-center h-100">
+                        <i class="bi bi-geo-alt-fill fs-1 text-danger"></i>
+                        <h5 class="mt-3">Address</h5>
+                        <p>123 Traveler Lane,<br> Wanderlust City</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 shadow-sm bg-white rounded text-center h-100">
+                        <i class="bi bi-telephone-fill fs-1 text-success"></i>
+                        <h5 class="mt-3">Phone</h5>
+                        <p>+1 234 567 890</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 shadow-sm bg-white rounded text-center h-100">
+                        <i class="bi bi-envelope-fill fs-1 text-primary"></i>
+                        <h5 class="mt-3">Email</h5>
+                        <p>info@exploreworld.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form & Map -->
+            <div class="row mt-5">
+                <!-- Contact Form -->
+                <div class="col-md-6">
+                    <div class="p-4 shadow-sm bg-white rounded">
+                        <h5 class="mb-3">Send Us a Message</h5>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div class="col-md-6">
+                    <div class="p-2 shadow-sm bg-white rounded h-100">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24187.180813524478!2d-74.005941!3d40.712776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQyJzQ2LjAiTiA3NMKwMDAnMjAuMCJX!5e0!3m2!1sen!2sus!4v1691234567890!5m2!1sen!2sus"
+                            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap Icons (if not added already) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 Explore World. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
